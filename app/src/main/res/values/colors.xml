@@ -6,5 +6,7 @@
     <color name="white">#ffffff</color>
     <color name="lightGrey">#7A8089</color>
     <color name="darkGrey">#363A43</color>
+    <color name="lightYellow">#FFF999</color>
+    <color name="tealGreen">#009999</color>
 
 </resources>

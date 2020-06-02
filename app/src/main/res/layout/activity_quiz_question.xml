@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="@color/tealGreen"
     tools:context=".QuizQuestionActivity">
 
     <LinearLayout
@@ -21,7 +22,7 @@
             android:layout_margin="10dp"
             android:gravity="center"
             android:text="What country does this flag belong to?"
-            android:textColor="@color/lightGrey"
+            android:textColor="@color/white"
             android:textSize="20dp" />
 
         <ImageView
@@ -32,7 +33,7 @@
             android:src="@drawable/ic_flag_of_argentina" />
 
         <LinearLayout
-            android:id="@+id/progressBarDetails"
+            android:id="@+id/progressBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -40,7 +41,7 @@
             android:orientation="horizontal">
 
             <ProgressBar
-                android:id="@+id/progressBar"
+                android:id="@+id/progressBarLine"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -48,10 +49,11 @@
                 android:indeterminate="false"
                 android:max="10"
                 android:minHeight="50dp"
-                android:progress="0" />
+                android:progress="0"
+                android:progressBackgroundTintMode="src_over"/>
 
             <TextView
-                android:id="@+id/progressCompleteQuestions"
+                android:id="@+id/progressBarOutOf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -67,26 +69,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:background="@drawable/text_view_appearance"
             android:gravity="center"
-            android:text="text1"
-            android:textSize="20sp" />
+            android:padding="7dp"
+            android:textSize="20sp"
+            tools:text="text1" />
 
         <TextView
             android:id="@+id/questionOptionTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:background="@drawable/text_view_appearance"
             android:gravity="center"
-            android:text="text2"
-            android:textSize="20sp" />
+            android:padding="7dp"
+            android:textSize="20sp"
+            tools:text="text2" />
 
         <TextView
             android:id="@+id/questionOptionThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:background="@drawable/text_view_appearance"
             android:gravity="center"
-            android:text="text3"
+            android:padding="7dp"
+            tools:text="text3"
             android:textSize="20sp" />
 
         <TextView
@@ -94,8 +102,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:background="@drawable/text_view_appearance"
             android:gravity="center"
-            android:text="text4"
+            android:padding="7dp"
+            tools:text="text4"
             android:textSize="20sp" />
 
         <Button
