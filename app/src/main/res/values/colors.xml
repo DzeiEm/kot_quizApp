@@ -8,5 +8,7 @@
     <color name="darkGrey">#363A43</color>
     <color name="lightYellow">#FFF999</color>
     <color name="tealGreen">#009999</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
 
 </resources>
